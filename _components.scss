@@ -29,7 +29,6 @@ section{
     padding: 20px;
     font-size: 30px;
     position: relative;
-  }
 .display-1 {
     opacity: 0.4;
     font-size: 20px;
@@ -41,13 +40,14 @@ section{
     bottom: 0;
     left: 10;
     font-size: 20px;
-    opacity: 0.3;
+    opacity: 0.4;
   }
+}
 .all_button {
     color: $operator-background;
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(4, 1fr);
-}
+
 .button {
     border: 0.5px solid $operator-background;
     display: inline-block;
@@ -64,3 +64,4 @@ section{
   .btn-0 {
     grid-column: 1/3;
   }
+}
