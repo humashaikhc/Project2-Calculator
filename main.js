@@ -1,7 +1,7 @@
 //Calling all classes in JS file
 const display1 = document.querySelector(".display-1");
 const display2 = document.querySelector(".display-2");
-const TempResult = document.querySelector(".result");
+const tempResult = document.querySelector(".result");
 const numbers = document.querySelectorAll(".number");
 const operation = document.querySelectorAll(".operation");
 const equal = document.querySelector(".equal");
@@ -31,7 +31,7 @@ numbers.forEach((number) => {
 });
 
 //Creating a math function for operations on buttons.
-function mathOperation() {
+const mathOperation() {
   if (lastOperation === "x") {
     result = parseFloat(result) * parseFloat(dis2Num);
   } else if (lastOperation === "+") {
@@ -44,7 +44,7 @@ function mathOperation() {
 }
 
 //A function to rearrange the display after pressing inputs..
-function clearVar(name = "") {
+let clearVar(name = "") {
   dis1Num += dis2Num + " " + name + " ";
   display1.innerText = dis1Num;
   display2.innerText = "";
@@ -88,5 +88,5 @@ clearAll.addEventListener("click", () => {
   result = "";
   display1.innerText = "0";
   display2.innerText = "0";
-  TempResult.innerText = "0";
+  tempResult.innerText = "0";
 });
