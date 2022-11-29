@@ -44,7 +44,7 @@ const mathOperation() {
 }
 
 //A function to rearrange the display after pressing inputs..
-let clearVar(name = "") {
+function clearVar(name = "") {
   dis1Num += dis2Num + " " + name + " ";
   display1.innerText = dis1Num;
   display2.innerText = "";
