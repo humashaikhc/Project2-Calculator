@@ -31,7 +31,7 @@ numbers.forEach((number) => {
 });
 
 //Creating a math function for operations on buttons.
-const mathOperation() {
+function mathOperation() {
   if (lastOperation === "x") {
     result = parseFloat(result) * parseFloat(dis2Num);
   } else if (lastOperation === "+") {
